@@ -1,7 +1,15 @@
 controllers:
-    resource: ../src/Controller/
-    type: annotation
+  resource: ../src/Controller/
+  type: annotation
 
 kernel:
-    resource: ../src/Kernel.php
-    type: annotation
+  resource: ../src/Kernel.php
+  type: annotation
+
+app_lucky_number:
+  path: /lucky/number
+  controller: App\Controller\LuckyController::number
+
+app_add_number:
+  path: /result
+  controller: App\calcul\Calcul::Addition
